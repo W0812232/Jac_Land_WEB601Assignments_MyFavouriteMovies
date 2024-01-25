@@ -1,4 +1,4 @@
-interface content {
+interface Content {
     id: number;
     description: string;
     creator: string;
