@@ -46,7 +46,7 @@ export class ContentCardComponent {
       this.contentList.addList(movie3);
     }
 
-    display(index: number): string{
+    display(index: number){
       return this.contentList.display(index);
     }
 
