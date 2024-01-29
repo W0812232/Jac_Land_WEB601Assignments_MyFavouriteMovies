@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ContentList } from '../helper-files/content-list';
+/* import { ContentList } from '../helper-files/content-list'; */
 import { Content } from '../helper-files/content-interface';
 @Component({
   selector: 'app-content-card',
@@ -10,7 +10,7 @@ import { Content } from '../helper-files/content-interface';
 })
 export class ContentCardComponent {
 
-    contentList: ContentList;
+    /*contentList: ContentList;
 
     constructor() {
       this.contentList = new ContentList();
@@ -49,5 +49,5 @@ export class ContentCardComponent {
     display(index: number){
       return this.contentList.display(index);
     }
-
+ */
 }
