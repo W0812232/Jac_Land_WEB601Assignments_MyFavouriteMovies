@@ -27,7 +27,7 @@ export class ContentListComponent {
         imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
         type: 'Horror/Action'
     }
-  ]
+  ];
   }
   
  
