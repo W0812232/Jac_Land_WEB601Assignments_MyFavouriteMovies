@@ -1,3 +1,6 @@
 <p>content-card works!</p>
 
-<app-content-list *ngFor="let movie of movies"></app-content-list>
+<app-content-card
+  *ngFor="let content of myContentArray"
+  [content]="content"
+></app-content-card>
