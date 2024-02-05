@@ -14,7 +14,7 @@ export class ContentListComponent implements OnInit {
     this.movies = [];
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.movies = [
       {
         id: 1,
