@@ -1,2 +1,5 @@
-<div *ngFor="let item of movies"
-[content]="item" [class.is-first]="isFirst"></div>
+<p>content-card works!</p>
+
+<div *ngFor="let movies of movies">
+    <h1>{{ movies.title}}</h1>
+</div>
