@@ -1,2 +1,12 @@
-<p>content-card works!</p>
-<p>{{ content.title }}</p>
+<div style="border: 1px solid">
+    <h1>{{ content.title }}</h1>
+    <p>
+      Description: <em>{{ content.description }}</em>
+    </p>
+    <button type="button" (click)="doAlert(content.id,content.title)">
+      <img src="{{ content.imgURL }}" />
+    </button>
+    <p>Director: {{ content.creator }}</p>
+    <p>Genre: {{ content.type }}</p>
+    <p>{{ content.tags }}</p>
+  </div>

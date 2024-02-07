@@ -18,7 +18,7 @@ export class ContentListComponent implements OnInit {
     description:
       'Captain Barbossa, Will Turner and Elizabeth Swann must sail off the edge of the map, navigate treachery and betrayal, find Jack Sparrow, and make their final alliances for one last decisive battle.',
     creator: 'Gore Verbinski',
-    imgURL: '',
+    imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
     type: 'Adventure/Action',
   };
 
@@ -28,7 +28,7 @@ export class ContentListComponent implements OnInit {
     description:
       'A half-vampire, half-mortal man becomes a protector of the mortal race, while slaying evil vampires.',
     creator: 'Stephen Norrington',
-    imgURL: '',
+    imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
     type: 'Horror/Action',
   };
 
@@ -38,7 +38,7 @@ export class ContentListComponent implements OnInit {
     description:
       "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
     creator: 'Peter Jackson',
-    imgURL: '',
+    imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
     type: 'Fantasy/Adventure',
   };
 
