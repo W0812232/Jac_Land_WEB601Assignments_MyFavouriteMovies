@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+app-content-card.is-first > div {
+    border: 2px solid;
+  }
+  div {
+    border: 1px solid;
+  }
+  
