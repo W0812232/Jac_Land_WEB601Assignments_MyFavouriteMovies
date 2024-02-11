@@ -1,9 +1,9 @@
-<div style="border: 1px solid">
+<div>
     <h1>{{ content.title }}</h1>
     <p>
       Description: <em>{{ content.description }}</em>
     </p>
-    <button type="button" (click)="doAlert(content.id,content.title)">
+    <button type="button" (click)="doAlert(content.id, content.title)">
       <img src="{{ content.imgURL }}" />
     </button>
     <p>Director: {{ content.creator }}</p>
