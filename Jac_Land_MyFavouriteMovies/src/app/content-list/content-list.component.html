@@ -1,4 +1,6 @@
 <app-content-card
   *ngFor="let content of myContentArray; index as i; first as isFirst"
   [content]="content"
-  [class.is-first]="isFirst"></app-content-card>
+  [class.is-first]="isFirst" *ngFor="let item of (content |
+  contentTagged)"
+  [content]="item"></app-content-card>
