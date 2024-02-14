@@ -42,7 +42,7 @@ export class ContentListComponent implements OnInit {
       "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
     creator: 'Peter Jackson',
     imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
-    type: '',
+    
     tags: ['Adventure','Fantasy']
   };
   contentItem4 = {
