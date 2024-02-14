@@ -1,6 +1,18 @@
+<h1>All Movies</h1>
 <app-content-card
   *ngFor="let content of myContentArray; index as i; first as isFirst"
   [content]="content"
-  [class.is-first]="isFirst" *ngFor="let item of (content |
-  contentTagged)"
-  [content]="item"></app-content-card>
+  [class.is-first]="isFirst"
+></app-content-card>
+
+<h1>Movies Rated: R</h1>
+<app-content-card
+  *ngFor="let content of myContentArray | contentFilter: 'R'"
+  [content]="content"
+></app-content-card>
+
+<h1>Movies Rated: PG-13</h1>
+<app-content-card
+  *ngFor="let content of myContentArray | contentFilter: 'PG-13'"
+  [content]="content"
+></app-content-card>

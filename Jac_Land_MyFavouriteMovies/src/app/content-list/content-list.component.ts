@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Content } from '../helper-files/content-interface';
 import { CommonModule } from '@angular/common';
 import { ContentCardComponent } from '../content-card/content-card.component';
+import { ContentFilterPipe } from '../content-filter.pipe';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-content-list',
   templateUrl: './content-list.component.html',
   standalone: true,
-  imports: [CommonModule, ContentCardComponent],
+  imports: [CommonModule, ContentCardComponent, ContentFilterPipe],
   styleUrls: ['./content-list.component.scss'],
 })
 export class ContentListComponent implements OnInit {
@@ -21,7 +23,7 @@ export class ContentListComponent implements OnInit {
     creator: 'Gore Verbinski',
     imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
     type: 'PG-13',
-    tags: ['Action','Adventure']
+    tags: ['Action', 'Adventure'],
   };
 
   contentItem2 = {
@@ -32,7 +34,7 @@ export class ContentListComponent implements OnInit {
     creator: 'Stephen Norrington',
     imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
     type: 'R',
-    tags: ['Action','Horror']
+    tags: ['Action', 'Horror'],
   };
 
   contentItem3 = {
@@ -42,28 +44,28 @@ export class ContentListComponent implements OnInit {
       "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
     creator: 'Peter Jackson',
     imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
-    
-    tags: ['Adventure','Fantasy']
+    type: '',
+    tags: ['Adventure', 'Fantasy'],
   };
   contentItem4 = {
     id: 4,
     title: 'The 7th Voyage of Sinbad',
     description:
-      "When a princess is shrunken by an evil wizard, Sinbad must undertake a quest to an island of monsters to cure her and prevent a war.",
+      'When a princess is shrunken by an evil wizard, Sinbad must undertake a quest to an island of monsters to cure her and prevent a war.',
     creator: 'Nathan Juran',
     imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
     type: 'G',
-    tags: ['Action','Adventure','Fantasy']
+    tags: ['Action', 'Adventure', 'Fantasy'],
   };
   contentItem5 = {
     id: 5,
     title: 'Dungeons & Dragons: Honor Among Thieves',
     description:
-      "A charming thief and a band of unlikely adventurers embark on an epic quest to retrieve a lost relic, but things go dangerously awry when they run afoul of the wrong people.",
+      'A charming thief and a band of unlikely adventurers embark on an epic quest to retrieve a lost relic, but things go dangerously awry when they run afoul of the wrong people.',
     creator: 'John Francis Daley/Jonathan Goldstein',
     imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
     type: 'PG-13',
-    tags: ['Action','Adventure','Comedy']
+    tags: ['Action', 'Adventure', 'Comedy'],
   };
   contentItem6 = {
     id: 6,
@@ -73,17 +75,17 @@ export class ContentListComponent implements OnInit {
     creator: 'Nicolas Winding Refn',
     imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
     type: 'R',
-    tags: ['Action','Drama']
+    tags: ['Action', 'Drama'],
   };
   contentItem7 = {
     id: 7,
     title: 'The Big Short',
     description:
-      "In 2006-2007 a group of investors bet against the United States mortgage market. In their research, they discover how flawed and corrupt the market is.",
+      'In 2006-2007 a group of investors bet against the United States mortgage market. In their research, they discover how flawed and corrupt the market is.',
     creator: 'Adam McKay',
     imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
     type: 'R',
-    tags: ['Biography','Comedy','Drama']
+    tags: ['Biography', 'Comedy', 'Drama'],
   };
 
   ngOnInit() {
@@ -92,7 +94,9 @@ export class ContentListComponent implements OnInit {
       this.contentItem2,
       this.contentItem3,
       this.contentItem4,
-      this.contentItem5
+      this.contentItem5,
+      this.contentItem6,
+      this.contentItem7,
     ];
   }
 }
