@@ -4,7 +4,7 @@
       Description: <em>{{ content.description }}</em>
     </p>
     <button type="button" (click)="doAlert(content.id, content.title)">
-      <img [src]="content.imgURL" />
+      <img src="{{ content.imgURL }}" />
     </button>
     <p>Director: {{ content.creator }}</p>
     <p>Rating: {{ content.type }}</p>
