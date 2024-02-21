@@ -21,7 +21,7 @@ export class ContentListComponent implements OnInit {
     description:
       'Captain Barbossa, Will Turner and Elizabeth Swann must sail off the edge of the map, navigate treachery and betrayal, find Jack Sparrow, and make their final alliances for one last decisive battle.',
     creator: 'Gore Verbinski',
-    imgURL: '/assets/Images/AtWolrdsEnd.jpg',
+    imgURL: 'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@fe30b2f8d7ac5b20718ad2b56cc69ee988027ec3/Jac_Land_MyFavouriteMovies/src/assets/Images/AtWorldsEnd.jpg',
     type: 'PG-13',
     tags: ['Action', 'Adventure'],
   };
