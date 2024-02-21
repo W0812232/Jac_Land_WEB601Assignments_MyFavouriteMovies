@@ -21,7 +21,8 @@ export class ContentListComponent implements OnInit {
     description:
       'Captain Barbossa, Will Turner and Elizabeth Swann must sail off the edge of the map, navigate treachery and betrayal, find Jack Sparrow, and make their final alliances for one last decisive battle.',
     creator: 'Gore Verbinski',
-    imgURL: 'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@fe30b2f8d7ac5b20718ad2b56cc69ee988027ec3/Jac_Land_MyFavouriteMovies/src/assets/Images/AtWorldsEnd.jpg',
+    imgURL:
+      'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@fe30b2f8d7ac5b20718ad2b56cc69ee988027ec3/Jac_Land_MyFavouriteMovies/src/assets/Images/AtWorldsEnd.jpg',
     type: 'PG-13',
     tags: ['Action', 'Adventure'],
   };
@@ -32,7 +33,8 @@ export class ContentListComponent implements OnInit {
     description:
       'A half-vampire, half-mortal man becomes a protector of the mortal race, while slaying evil vampires.',
     creator: 'Stephen Norrington',
-    imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
+    imgURL:
+      'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/blade.jpg',
     type: 'R',
     tags: ['Action', 'Horror'],
   };
@@ -43,8 +45,9 @@ export class ContentListComponent implements OnInit {
     description:
       "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
     creator: 'Peter Jackson',
-    imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
-    type: '',
+    imgURL:
+      'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/lotrReturnOfTheKing.jpg',
+    type: 'PG',
     tags: ['Adventure', 'Fantasy'],
   };
   contentItem4 = {
@@ -53,7 +56,8 @@ export class ContentListComponent implements OnInit {
     description:
       'When a princess is shrunken by an evil wizard, Sinbad must undertake a quest to an island of monsters to cure her and prevent a war.',
     creator: 'Nathan Juran',
-    imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
+    imgURL:
+      'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/7thVoyageOfSinbad.jpg',
     type: 'G',
     tags: ['Action', 'Adventure', 'Fantasy'],
   };
@@ -63,7 +67,8 @@ export class ContentListComponent implements OnInit {
     description:
       'A charming thief and a band of unlikely adventurers embark on an epic quest to retrieve a lost relic, but things go dangerously awry when they run afoul of the wrong people.',
     creator: 'John Francis Daley/Jonathan Goldstein',
-    imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
+    imgURL:
+      'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/Dugeons&DragonsMovie.jpg',
     type: 'PG-13',
     tags: ['Action', 'Adventure', 'Comedy'],
   };
@@ -73,7 +78,8 @@ export class ContentListComponent implements OnInit {
     description:
       "A mysterious Hollywood action film stuntman gets in trouble with gangsters when he tries to help his neighbor's husband rob a pawn shop while serving as his getaway driver.",
     creator: 'Nicolas Winding Refn',
-    imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
+    imgURL:
+      'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/drive.jpg',
     type: 'R',
     tags: ['Action', 'Drama'],
   };
@@ -83,7 +89,8 @@ export class ContentListComponent implements OnInit {
     description:
       'In 2006-2007 a group of investors bet against the United States mortgage market. In their research, they discover how flawed and corrupt the market is.',
     creator: 'Adam McKay',
-    imgURL: 'https://angular.io/assets/images/logos/angular/angular.png',
+    imgURL:
+      'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/theBigShort.jpg',
     type: 'R',
     tags: ['Biography', 'Comedy', 'Drama'],
   };
@@ -101,4 +108,3 @@ export class ContentListComponent implements OnInit {
   }
 }
 
-/*'Jaws','Pirates of the Caribbean: At Worlds End', 'Blade', 'The Lord of the Rings: The Return of the King', 'A Fistful of Dollars', 'Dungeons & Dragons: Honor Among Thieves' */
