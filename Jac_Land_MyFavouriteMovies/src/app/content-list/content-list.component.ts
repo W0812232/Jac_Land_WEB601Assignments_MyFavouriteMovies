@@ -16,6 +16,8 @@ export class ContentListComponent implements OnInit {
   name: string;
   movie = false;
   searchtext = '';
+  colorChanger = '';
+  message: string;
   myContentArray: Content[];
   contentItem = {
     id: 1,
@@ -112,7 +114,13 @@ export class ContentListComponent implements OnInit {
   clickEvent() {
     this.movie = this.myContentArray.some((item) => item.title === this.name);
     if (this.movie === true) {
+      this.colorChanger = 'green';
+      this.message = 'This movie exists';
+      
       return;
+    } else {
+      this.message = 'That movie does not exist';
+      this.colorChanger = 'red';
     }
+  }
 }
-
