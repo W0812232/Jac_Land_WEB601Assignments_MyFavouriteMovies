@@ -62,7 +62,7 @@ export class ContentListComponent implements OnInit {
     creator: 'Nathan Juran',
     imgURL:
       'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/7thVoyageOfSinbad.jpg',
-    type: 'G',
+    type: '',
     tags: ['Action', 'Adventure', 'Fantasy'],
   };
   contentItem5 = {
