@@ -116,4 +116,3 @@ export class ContentListComponent implements OnInit {
     }
 }
 
-/*'Jaws','Pirates of the Caribbean: At Worlds End', 'Blade', 'The Lord of the Rings: The Return of the King', 'A Fistful of Dollars', 'Dungeons & Dragons: Honor Among Thieves' */
