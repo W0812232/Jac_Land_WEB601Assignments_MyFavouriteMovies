@@ -1,16 +1,16 @@
 <div>
-    <h1>{{ content.title }}</h1>
-    <p>
-      Description: <em>{{ content.description }}</em>
-    </p>
-    <button type="button" (click)="doAlert(content.id, content.title)">
-      <img
+  <h1>{{ content.title }}</h1>
+  <p>
+    Description: <em>{{ content.description }}</em>
+  </p>
+  <button type="button" (click)="doAlert(content.id, content.title)">
+    <img
       *ngIf="!content.imgURL"
       src="https://angular.io/assets/images/logos/angular/angular.png"
     />
-      <img [src]="content.imgURL" />
-    </button>
-    <p>Director: {{ content.creator }}</p>
-    <p>Rating: {{ content.type }}</p>
-    <p>Genre: {{ content.tags }} </p>
-  </div>
+    <img [src]="content.imgURL" />
+  </button>
+  <p>Director: {{ content.creator }}</p>
+  <p appHoverAffect [colour]='"blue"' >Rating: {{ content.type }}</p>
+  <p appHoverAffect>Genre: {{ content.tags }}</p>
+</div>
