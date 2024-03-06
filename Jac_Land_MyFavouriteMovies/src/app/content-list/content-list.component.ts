@@ -98,6 +98,16 @@ export class ContentListComponent implements OnInit {
     type: 'R',
     tags: ['Biography', 'Comedy', 'Drama'],
   };
+  contentItem8 = {
+    id: 8,
+    title: 'Dragon Ball Z: Dead Zone',
+    description:
+      "Gohan is kidnapped by Garlic Jr.'s men so he can have Gohan's Dragon Ball to grant him immortality. Goku and his friends try to stop Garlic Jr. and save the world.",
+    creator: 'Daisuke Nishio',
+    
+    
+    tags: ['Action','Animation', 'Short'],
+  };
 
   ngOnInit() {
     this.myContentArray = [
@@ -108,6 +118,7 @@ export class ContentListComponent implements OnInit {
       this.contentItem5,
       this.contentItem6,
       this.contentItem7,
+      this.contentItem8,
     ];
   }
 
