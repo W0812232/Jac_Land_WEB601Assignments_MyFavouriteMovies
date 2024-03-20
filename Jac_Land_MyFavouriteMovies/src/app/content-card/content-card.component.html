@@ -1,6 +1,16 @@
-<p>content-card works!</p>
-
-<div [innerHTML]="display(0)"></div>
-<div [innerHTML]="display(1)"></div>
-<div [innerHTML]="display(2)"></div>
-
+<div>
+  <h1>{{ content.title }}</h1>
+  <p>
+    Description: <em>{{ content.description }}</em>
+  </p>
+  <button type="button" (click)="doAlert(content.id, content.title)">
+    <img
+      *ngIf="!content.imgURL"
+      src="https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@59bdcf1655a326c6dd1311359a20fec4ba6f73f1/Jac_Land_MyFavouriteMovies/src/assets/Images/movie.jpg"
+    />
+    <img [src]="content.imgURL" />
+  </button>
+  <p>Director: {{ content.creator }}</p>
+  <p appHoverAffect [colour]='"blue"' >Rating: {{ content.type }}</p>
+  <p appHoverAffect>Genre: {{ content.tags }}</p>
+</div>

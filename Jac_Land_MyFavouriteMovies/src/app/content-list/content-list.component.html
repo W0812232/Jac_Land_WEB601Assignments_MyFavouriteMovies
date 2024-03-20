@@ -1,0 +1,28 @@
+<input [(ngModel)]="name" placeholder="search movies" />
+<button (click)="clickEvent()">Search!</button>
+<p [style.color]="colorChanger">{{ message }}</p>
+
+<div class="movies">
+  <h1>All Movies</h1>
+  <div class="group1">
+    <app-content-card
+      *ngFor="let content of myContentArray; index as i; first as isFirst"
+      [content]="content"
+      [class.is-first]="isFirst"
+    ></app-content-card>
+  </div>
+  <h1>Movies Rated: R</h1>
+  <div class="group2">
+    <app-content-card
+      *ngFor="let content of myContentArray | contentFilter: 'R'"
+      [content]="content"
+    ></app-content-card>
+  </div>
+  <h1>Movies Rated: PG-13</h1>
+  <div class="group3">
+    <app-content-card
+      *ngFor="let content of myContentArray | contentFilter: 'PG-13'"
+      [content]="content"
+    ></app-content-card>
+  </div>
+</div>
