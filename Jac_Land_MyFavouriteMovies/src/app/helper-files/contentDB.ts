@@ -1,6 +1,6 @@
 import { Content } from './content-interface'
-export var myContentArray: Content[];
-const contentItem = {
+export var myContentArray: Content[] = [
+{
     id: 1,
     title: "Pirates of the Caribbean: At World's End",
     description:
@@ -10,9 +10,9 @@ const contentItem = {
       'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@fe30b2f8d7ac5b20718ad2b56cc69ee988027ec3/Jac_Land_MyFavouriteMovies/src/assets/Images/AtWorldsEnd.jpg',
     type: 'PG-13',
     tags: ['Action', 'Adventure'],
-  };
+  },
 
-  const contentItem2 = {
+   {
     id: 2,
     title: 'Blade',
     description:
@@ -22,9 +22,9 @@ const contentItem = {
       'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/blade.jpg',
     type: 'R',
     tags: ['Action', 'Horror'],
-  };
-
-  const contentItem3 = {
+  },
+  
+  {
     id: 3,
     title: 'The Lord of the Rings: The Return of the King',
     description:
@@ -34,8 +34,9 @@ const contentItem = {
       'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/lotrReturnOfTheKing.jpg',
     type: 'PG',
     tags: ['Adventure', 'Fantasy'],
-  };
-  const contentItem4 = {
+  },
+  
+  {
     id: 4,
     title: 'The 7th Voyage of Sinbad',
     description:
@@ -45,8 +46,9 @@ const contentItem = {
       'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/7thVoyageOfSinbad.jpg',
     type: '',
     tags: ['Action', 'Adventure', 'Fantasy'],
-  };
-  const contentItem5 = {
+  },
+  
+  {
     id: 5,
     title: 'Dungeons & Dragons: Honor Among Thieves',
     description:
@@ -56,8 +58,9 @@ const contentItem = {
       'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/Dugeons&DragonsMovie.jpg',
     type: 'PG-13',
     tags: ['Action', 'Adventure', 'Comedy'],
-  };
-  const contentItem6 = {
+  },
+  
+  {
     id: 6,
     title: 'Drive',
     description:
@@ -67,8 +70,9 @@ const contentItem = {
       'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/drive.jpg',
     type: 'R',
     tags: ['Action', 'Drama'],
-  };
-  const contentItem7 = {
+  },
+  
+  {
     id: 7,
     title: 'The Big Short',
     description:
@@ -78,8 +82,9 @@ const contentItem = {
       'https://cdn.jsdelivr.net/gh/W0812232/Jac_Land_WEB601Assignments_MyFavouriteMovies@80c1096e63beac9b39addb2003a11a17120b2e09/Jac_Land_MyFavouriteMovies/src/assets/Images/theBigShort.jpg',
     type: 'R',
     tags: ['Biography', 'Comedy', 'Drama'],
-  };
-  const contentItem8 = {
+  },
+  
+  {
     id: 8,
     title: 'Dragon Ball Z: Dead Zone',
     description:
@@ -88,4 +93,5 @@ const contentItem = {
     
     
     tags: ['Action','Animation', 'Short'],
-  };
+  },
+];
