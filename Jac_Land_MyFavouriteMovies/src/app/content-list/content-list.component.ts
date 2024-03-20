@@ -123,7 +123,7 @@ export class ContentListComponent implements OnInit {
   }
 
   clickEvent() {
-    this.movie = this.myContentArray.some((item) => item.title === this.name);
+    this.movie = this.myContentArray.some(item => item.title.toLowerCase() === this.name.toLocaleLowerCase()); //remeber that title and name are being compared 
     if (this.movie === true) {
       this.colorChanger = 'green';
       this.message = 'This movie exists';
