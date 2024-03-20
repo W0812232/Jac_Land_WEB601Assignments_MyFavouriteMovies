@@ -1,4 +1,4 @@
-<app-create-content></app-create-content>
+<app-create-content (newMovieEvent)="addMovieToList($event)"></app-create-content>
 <input [(ngModel)]="name" placeholder="search movies" />
 <button (click)="clickEvent()">Search!</button>
 <p [style.color]="colorChanger">{{ message }}</p>
