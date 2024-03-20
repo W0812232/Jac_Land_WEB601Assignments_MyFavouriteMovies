@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ContentCardComponent } from '../content-card/content-card.component';
 import { ContentFilterPipe } from '../content-filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { MovieService } from '../movie.service';
 @Component({
   selector: 'app-content-list',
   templateUrl: './content-list.component.html',
@@ -18,20 +19,14 @@ export class ContentListComponent implements OnInit {
   searchtext = '';
   colorChanger = '';
   message: string;
+  myContentArray: Content[]
   
-  
+  constructor(private MovieService: MovieService) { }
+
 
   ngOnInit() {
-    this.myContentArray = [
-      this.contentItem,
-      this.contentItem2,
-      this.contentItem3,
-      this.contentItem4,
-      this.contentItem5,
-      this.contentItem6,
-      this.contentItem7,
-      this.contentItem8,
-    ];
+  this.myContentArray = this.MovieService.getContent();
+
   }
 
   clickEvent() {
