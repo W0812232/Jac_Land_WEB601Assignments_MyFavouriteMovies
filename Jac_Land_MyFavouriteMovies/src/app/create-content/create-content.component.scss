@@ -1,7 +1,11 @@
 .d {
-    float: left;
-    text-align: right;
-  }
-  div {
-    border: none;
-  }
+  float: left;
+  text-align: right;
+}
+div {
+  border: none;
+}
+.error {
+  font-weight: bold;
+  color: red;
+}

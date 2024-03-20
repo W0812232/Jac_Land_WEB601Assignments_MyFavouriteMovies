@@ -1,22 +1,20 @@
 .group1 {
-    background-color: orange;
-    border-radius: 20px;
+  background-color: rgb(228, 178, 86);
+}
+
+.group2 {
+  background-color: rgb(56, 124, 56);
+}
+
+.group3 {
+  background-color: rgb(165, 59, 59);
+}
+.movies {
+  padding: 5px;
+  background-color: rgb(201, 201, 201);
+  border-radius: 20px;
+  border-style: outset;
+  h1 {
+    text-align: center;
   }
-  
-  .group2 {
-    background-color: darkgreen;
-  }
-  
-  .group3 {
-    background-color: darkred;
-  }
-  .movies {
-    padding: 5px;
-    background-color: grey;
-    border-radius: 20px;
-    border-style: outset;
-    h1 {
-      text-align: center;
-    }
-  }
-  
+}

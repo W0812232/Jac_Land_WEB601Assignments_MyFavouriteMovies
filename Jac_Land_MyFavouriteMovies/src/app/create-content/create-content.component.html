@@ -1,24 +1,27 @@
-
-<form (ngSubmit)="addBand()" >
-
-    <div class="d">
-      <label name="id">ID: </label><br>
-      <label name="title">Title: </label><br>
-      <label name="description">Description: </label><br>
-      <label name ="image">Image URL: </label><br>
-      <label name="director">Director: </label><br>
-      <label name ="rating">Rating: </label><br>
-      <label name="genre">Genre: </label><br>
-    </div>
-    <input type="number" name="id"><br>
-    <input type="text" name="title"><br>
-    <input type="text" name="dexcription"><br>
-    <input type="text" name="image"> <br>
-    <input type="text" name="director"><br>
-    <input type="text" name="rating"><br>
-    <input type="text" name="genre"> 
-    <br>
-    <input type="submit">
-  
-  </form>
-  <br>
+<form (ngSubmit)="addMovie()">
+  <div class="d">
+    <label name="id">ID: </label><br />
+    <label name="title">Title: </label><br />
+    <label name="description">Description: </label><br />
+    <label name="image">Image URL: </label><br />
+    <label name="director">Director: </label><br />
+    <label name="rating">Rating: </label><br />
+    <label name="genre">Genre: </label><br />
+  </div>
+  <input type="number" name="id" [(ngModel)]="newMovieItem.id" /><br />
+  <input type="text" name="title" [(ngModel)]="newMovieItem.title" /><br />
+  <input
+    type="text"
+    name="dexcription"
+    [(ngModel)]="newMovieItem.description"
+  /><br />
+  <input type="text" name="image" [(ngModel)]="newMovieItem.imgURL" /> <br />
+  <input type="text" name="director" [(ngModel)]="newMovieItem.creator" /><br />
+  <input type="text" name="rating" [(ngModel)]="newMovieItem.type" /><br />
+  <input type="text" name="genre" [(ngModel)]="newMovieItem.tags" />
+  <br />
+  <input type="submit" />
+  <p *ngIf="error" class="error" >
+    {{ error }}</p>
+</form>
+<br />

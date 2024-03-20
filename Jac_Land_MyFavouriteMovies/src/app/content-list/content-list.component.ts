@@ -4,11 +4,18 @@ import { CommonModule } from '@angular/common';
 import { ContentCardComponent } from '../content-card/content-card.component';
 import { ContentFilterPipe } from '../content-filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { CreateContentComponent } from '../create-content/create-content.component';
 @Component({
   selector: 'app-content-list',
   templateUrl: './content-list.component.html',
   standalone: true,
-  imports: [CommonModule, ContentCardComponent, ContentFilterPipe, FormsModule],
+  imports: [
+    CommonModule,
+    ContentCardComponent,
+    ContentFilterPipe,
+    FormsModule,
+    CreateContentComponent,
+  ],
   styleUrls: ['./content-list.component.scss'],
 })
 export class ContentListComponent implements OnInit {
@@ -104,9 +111,8 @@ export class ContentListComponent implements OnInit {
     description:
       "Gohan is kidnapped by Garlic Jr.'s men so he can have Gohan's Dragon Ball to grant him immortality. Goku and his friends try to stop Garlic Jr. and save the world.",
     creator: 'Daisuke Nishio',
-    
-    
-    tags: ['Action','Animation', 'Short'],
+
+    tags: ['Action', 'Animation', 'Short'],
   };
 
   ngOnInit() {
@@ -123,15 +129,19 @@ export class ContentListComponent implements OnInit {
   }
 
   clickEvent() {
-    this.movie = this.myContentArray.some((item) => item.title === this.name);
+    this.movie = this.myContentArray.some(item => item.title.toLowerCase() === this.name.toLocaleLowerCase());
     if (this.movie === true) {
       this.colorChanger = 'green';
       this.message = 'This movie exists';
-      
+
       return;
     } else {
       this.message = 'That movie does not exist';
       this.colorChanger = 'red';
     }
+  }
+  addMovieToList(content: Content) {
+    this.myContentArray.push(content);
+    this.myContentArray = [...this.myContentArray];
   }
 }
