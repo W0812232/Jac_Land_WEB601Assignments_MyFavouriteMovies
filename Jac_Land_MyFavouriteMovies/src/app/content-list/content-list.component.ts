@@ -25,8 +25,9 @@ export class ContentListComponent implements OnInit {
 
 
   ngOnInit() {
-  this.myContentArray = this.MovieService.getContent();
-
+    this.MovieService.getContentObs().subscribe(
+      (content) => (this.myContentArray = content)
+    );
   }
 
   clickEvent() {
